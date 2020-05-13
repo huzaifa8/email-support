@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="flex-r">
+        <nav>
+            <a href="#our-story">Our Story</a>
+            <a href="#branding">Branding and Marketing</a>
+            <a href="#development">Development</a>
+            <a href="#journal">Journal</a>
+        </nav>
+    </header>
+    <div class="flex-c main-container">
+        <div>
+            <div class="carousel" data-flickity='{ "autoPlay": true }'>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+            </div>
+        </div>
+        <div id="our-story" class="sub-container flex-r">
+            <div class="work-content flex-c">
+                <div>
+                    <h1>Hello!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu ornare lectus. Maecenas tempor risus id mi sollicitudin imperdiet. Duis et lacinia est. Aenean eu iaculis sem. Aenean hendrerit efficitur ultrices. Vestibulum aliquet
+                        posuere libero a eleifend. Vivamus rhoncus ex convallis, laoreet nisl vel, pharetra risus. Nullam volutpat congue pretium. Nullam fringilla molestie lacus, quis aliquet elit placerat ut. Phasellus ante eros, malesuada sed velit
+                        ut, porttitor molestie nulla. Morbi ornare, ligula ac sodales dignissim, dolor eros laoreet eros, eu fermentum nunc orci non dui. Vivamus vitae feugiat mauris. Duis laoreet viverra lacus, nec semper ipsum ullamcorper non. Maecenas
+                        sed sem justo. Integer quis commodo ante. Suspendisse enim ex, ullamcorper vel aliquet varius, faucibus in mi.</p>
+                </div>
+                <div class="flex-c">
+                    <h2>Why work with us?</h2>
+                    <ul>
+                        <div class="flex-r">
+                            <li><span>&#10004;</span>We are cost effective</li>
+                            <li class="mrg-left"><span>&#10004;</span>We are cost effective</li>
+                        </div>
+                        <div class="flex-r">
+                            <li><span>&#10004;</span>We are cost effective</li>
+                            <li class="mrg-left"><span>&#10004;</span>We are cost effective</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-img-cnt">
+                <img src="{% static 'images/Capture.PNG' %}" alt="">
+            </div>
+        </div>
+        <div id="branding" class="sub-container">
+            <div class="what-content flex-c">
+                <h1>What we do</h1>
+                <p>Suspendisse pellentesque, tellus eu pretium semper, sapien arcu euismod neque, quis accumsan risus nisl a magna. Ut eu eros urna. Suspendisse lacus dui, fermentum id sapien vitae, fringilla lobortis libero. Integer ultricies sodales fermentum</p>
+                <div class="tabs-container">
+                    <div class="flex-r tab-1">
+                        <div class="flex-c tabs">
+                            <h2>Branding</h2>
+                            <p>Suspendisse pellentesque, tellus eu pretium semper, sapien arcu euismod neque.</p>
+                        </div>
+                        <div class="flex-c tabs tab-2-1">
+                            <h2>Website & collateral Design</h2>
+                            <p>Suspendisse pellentesque, tellus eu pretium semper, sapien arcu euismod neque.</p>
+                        </div>
+                        <div class="flex-c tabs">
+                            <h2>Digital Marketing</h2>
+                            <p>Suspendisse pellentesque, tellus eu pretium semper, sapien arcu euismod neque.</p>
+                        </div>
+                    </div>
+                    <div class="flex-r tab-2">
+                        <div class="flex-c tabs">
+                            <h2>Web Applications</h2>
+                            <p>Suspendisse pellentesque, tellus eu pretium semper, sapien arcu euismod neque.</p>
+                        </div>
+                        <div class="flex-c tabs tab-2-2">
+                            <h2>Development</h2>
+                            <p>Suspendisse pellentesque, tellus eu pretium semper, sapien arcu euismod neque.</p>
+                        </div>
+                        <div class="flex-c tabs">
+                            <h2>Networking</h2>
+                            <p>Suspendisse pellentesque, tellus eu pretium semper, sapien arcu euismod neque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container about">
+            <div class="about-us">
+                <img src="{% static 'images/Capture2.PNG' %}" alt="">
+                <div class="flex-c about-contents">
+                    <h1>What they say about us</h1>
+                    <p>Curabitur elementum ligula et tortor sodales, nec accumsan metus sollicitudin. Pellentesque nec augue a magna sagittis rutrum vel quis tellus. Nam eleifend dolor vel erat euismod, a mattis nunc elementum. Suspendisse potenti. Nulla
+                        consequat non est non porttitor. Aliquam dapibus ante eget mauris ullamcorper vestibulum non sed arcu. Maecenas condimentum pretium massa, in euismod nisl dignissim vitae. Nunc sem augue, ultricies quis urna sit amet, commodo tincidunt
+                        neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam consectetur, diam eget maximus iaculis, lectus eros scelerisque ligula, a porta nibh libero vitae quam.
+                    </p>
+                    <span>John Doe</span>
+                </div>
+            </div>
+        </div>
+        <div id="development" class="sub-container">
+            <div class="flex-c usage what-content">
+                <div>
+                    <h1>Technology we use</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum odio a nisl convallis ullamcorper. Donec dictum velit nec fringilla bibendum. Nunc fermentum, ligula in commodo interdum, massa erat aliquet tellus, sed tincidunt
+                        neque lectus at magna. Nunc nunc orci.</p>
+                </div>
+                <div class="flex-r img-container">
+                    <div><img class="logo-img" src="{% static 'images/php.png' %}" alt=""></div>
+                    <div><img class="logo-img" src="{% static 'images/bitcoin.png' %}" alt=""></div>
+                    <div><img class="logo-img" src="{% static 'images/android.jpg' %}" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div id="journal" class="sub-container-chat">
+            <div class="flex-r">
+                <div class="flex-c chat-main">
+                    <h1>Let's Chat</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum odio.</p>
+                    <img class="chat-img" src="{% static 'images/Capture3.PNG' %}" alt="">
+                </div>
+                <form class="flex-c chat-inputs" method="post" action="">
+                    {% csrf_token%}
+                    <div class="flex-r name-int">
+                        <span><input type="text" placeholder="First Name" name="First_Name"></span>
+                        <span><input class="mrg-l" type="text" placeholder="Last Name" name="Last_Name"></span>
+                    </div>
+                    <span><input type="text" placeholder="Email" name="Email"></span>
+                    <span><input type="text" placeholder="Telephone" name="Telephone"></span>
+                    <span><input type="text" placeholder="Company" name="Company"></span>
+                    <span><textarea class="description" type="text" placeholder="Description" name="Description"></textarea></span>
+                    <span><button type="submit">Submit</button></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-main">
+            <div class="flex-r foot-cnt">
+                <div class="flex-c">
+                    <h3>Got a Project? Let's chat</h3>
+                    <h2>020 111 111</h2>
+                    <h2>hello@domainname.com</h2>
+                    <h3>Follow us</h3>
+                    <img src="{% static 'images/Capture4.PNG' %}" alt="">
+                </div>
+                <div class="flex-c">
+                    <h3>Registered address goes here</h3>
+                </div>
+                <div class="flex-c journal">
+                    <h3>Subscribe to our journal</h3>
+                    <form action="#" class="flex-c">
+                        <input type="text" placeholder="Full name">
+                        <input type="text" placeholder="Email address">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
